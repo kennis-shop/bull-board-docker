@@ -7,8 +7,5 @@ services:
       dockerfile: ./Dockerfile
       context: .
     restart: always
-    ports:
-      - 3000:3000
-    environment:
-      REDIS_HOST: host
-      REDIS_PASSWORD: pass
+    expose:
+      - "3000"
